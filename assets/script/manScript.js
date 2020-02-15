@@ -69,7 +69,7 @@ cc.Class({
         this.node.parent.getComponent('game').createBullet(this.bulletLeft, this.node.x, this.node.y);
     },
 
-    onKeyUp() {
+    onKeyUp(event) {
         switch (event.keyCode) {
             case cc.macro.KEY.a: {
                 this.left = false;
